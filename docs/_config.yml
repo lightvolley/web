@@ -1,0 +1,44 @@
+title: Light Volley 
+email: maurizio.napolitano@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+keywords: light volley, light volleyball, lightvolley, lightvolleyball, trento, trentino volley, matteo zingaro, maurizio napolitano, napo
+subtitle: Un nuovo modo di giocare a pallavolo&#58; semplice da imparare e super divertente per tutti!
+datelocation: 
+when: 
+where: 
+organizers: Insieme per Trento
+intro: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lightvolley.it/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: lightvolley
+github_username:  lightvolley
+facebook: lightvolley
+instagram: lightvolley
+preview: assets/img/poster.png
+encoding: utf-8
+markdown: kramdown
+google_analytics: 
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
