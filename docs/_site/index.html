@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.intro }}">
-  <meta name="keywords" content="{{ site.keywords }}">
+  <title>Light Volley</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="light volley, light volleyball, lightvolley, lightvolleyball, trento, trentino volley, matteo zingaro, maurizio napolitano, napo">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -47,7 +47,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/lightvolley.svg" alt="">
-        <!-- <h1 class="sitename" style="color: #fccd00">{{ site.title }}</h1>-->
+        <!-- <h1 class="sitename" style="color: #fccd00">Light Volley</h1>-->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -143,7 +143,18 @@
               <h4>Semplificare la pallavolo per renderla più facile da giocare</h4>
               <h3>La storia</h3>
               <p class="text-justify">
-                {% if page.about %} {% capture about %}{% include_relative _texts/{{ page.about }}%}{% endcapture %} {{ about | markdownify }} {% endif %}
+                  <p>Il “Light Volley” o “Light Volleyball” è una variante della pallavolo nata in Cina negli anni ‘80, pensata per essere un’alternativa più accessibile e facile da apprendere per chiunque.</p>
+
+<p>L’idea è quella di favorire la creazione di comunità attraverso uno sport che non richiede competenze tecniche avanzate.</p>
+
+<p>Questo sport è cresciuto enormemente negli ultimi anni, con la nascita della <a href="https://www.wlvl.org/">World Light Volleyball League</a> nel 2020.</p>
+
+<p>Il Light Volleyball è giocato in spazi più piccoli rispetto alla pallavolo tradizionale e utilizza una palla più leggera e larga, il che rende il gioco più facile da intercettare, ma più  difficile da controllare.</p>
+
+<p>Ora, grazie all’impegno di Lihua Ma, Maurizio Napolitano e Matteo Zingaro, il Light Volley è arrivato in Italia.</p>
+
+<p>Questo team sta sviluppando iniziative per far conoscere questa variante della pallavolo, partendo dal Trentino con l’obiettivo di creare una rete di appassionati e coinvolgere la comunità in un’esperienza sportiva innovativa e accessibile a chiunque.</p>
+ 
               </p>
               Cosa cambia?:
               <ul>
@@ -537,15 +548,15 @@
       <div class="container">
 
         <div class="row">
-          {% for member in site.data.team %}
+          
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/{{ member.img }}" class="img-fluid" alt="">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>{{ member.name }}</h4>
-                <span>{{ member.role }}</span>
+                <h4>Matteo Zingaro</h4>
+                <span>eventi e sviluppo tecnico</span>
                 <p>
-                  {{ member.desc }}
+                  allenatore della Trentino Volley da oltre 20anni lavorando sul settore giovanile maschile ed attualmente responsabile del settore reclutamento
                 </p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -556,7 +567,45 @@
               </div>
             </div>
           </div><!-- End Team Member -->
-          {% endfor %}
+          
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Maurizio Napolitano</h4>
+                <span>sviluppo tecnico</span>
+                <p>
+                  allenatore del settore femminile da oltre 30 anni occupandosi di settore giovanile e prime squadre con una esperienza nella serie A austriaca femminile e docente federale per i corsi allenatori e per la formazione dei dirigenti
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Lihua Ma</h4>
+                <span>internazionalizzazione</span>
+                <p>
+                  da oltre 10 anni allenatrice nel settore femminile e con una lunga esperienza da giocatrice a livello internazionale prima in Cina e poi in Austria.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          
 
         </div>
 
@@ -681,8 +730,8 @@
 
   <footer id="footer" class="footer light-background">
     <div class="container">
-      <h3 class="sitename">{{ site.title}}</h3>
-      <p>{{ site.subtitle }}</p>
+      <h3 class="sitename">Light Volley</h3>
+      <p>Un nuovo modo di giocare a pallavolo&#58; semplice da imparare e super divertente per tutti!</p>
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
