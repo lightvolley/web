@@ -54,7 +54,31 @@
 </head>
 
 <body class="index-page">
-
+	<!-- Cookie Policy -->
+	<div class="modal fade" id="cookie" tabindex="-1" role="dialog" aria-labelledby="titoloModale" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="titoloModale">Cookie Policy</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi">
+      </button>
+          </div>
+          <div class="modal-body">
+      <p class="text-left">
+            Questo sito non utilizza cookie.<br/>
+      Durante la navigazione su questo sito non viene installato alcun cookie sul tuo dispositivo.<br/>
+      Non viene raccolto, memorizzato o tracciato alcun tipo di informazione personale tramite cookie o altre tecnologie di tracciamento.<br/>
+      Grazie per la tua visita!
+      </p>
+    </div>
+    <!--
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+          </div>
+    -->
+        </div>
+    </div>
+</div>
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -77,6 +101,8 @@
           <!--<li><a href="#portfolio">Benefici</a></li>-->
           <li><a href="#team">Chi siamo</a></li>
           <li><a href="#contact">Contatti</a></li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#cookie">Cookie Policy</a></li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
