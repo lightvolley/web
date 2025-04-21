@@ -8,6 +8,20 @@
   <meta name="description" content="{{ site.intro }}">
   <meta name="keywords" content="{{ site.keywords }}">
 
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:title" content="{{ site.title }}" />
+<meta property="og:description" content="{{ site.intro }}" />
+<meta property="og:image" content="{{ site.preview }}" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="{{ site.intro }}" />
+<meta property="twitter:url" content="{{ site.url }}" />
+<meta property="twitter:title" content="{{ site.title }}" />
+<meta property="twitter:description" content="{{ site.intro }}" />
+<meta property="twitter:image" content="{{ site.preview }}" />
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -217,7 +231,7 @@
 
         <div class="row gy-4 justify-content-between">
           <div class="features-image col-lg-4 d-flex align-items-center" data-aos="fade-up">
-            <img src="assets/img/campo_da_gioco_blu.png" class="img-fluid" alt="">
+            <img src="assets/img/campo_da_gioco_3d.svg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-7 d-flex flex-column justify-content-center">
 
@@ -227,7 +241,8 @@
                 <h4>Campo da gioco</h4>
                 <p>Lunghezza totale: 12m<br/>
                 Larghezza: 6m<br/>
-              Campo di ogni squadra: 6x6m</p>
+		Campo di ogni squadra: 6x6m<br/>
+		Linea per distinzione seconda linea a: 2m dalla rete</p>
               </div>
             </div><!-- End Features Item-->
 
@@ -506,10 +521,15 @@
                   {{ member.desc }}
                 </p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  {% if member.linkedin %}
+                  <a href="https://www.linkedin.com/in/{{ member.linkedin}}"><i class="bi bi-linkedin"></i></a>
+                  {% endif %}
+                  {% if member.facebook %}
+                  <a href="https://www.facebook.com/{{ member.facebook}}"><i class="bi bi-facebook"></i></a>
+                  {% endif %}
+                  {% if member.instagram %}
+                  <a href="https://www.instagram.com/{{ member.instagram}}"><i class="bi bi-instagram"></i></a>
+                  {% endif %}
                 </div>
               </div>
             </div>
