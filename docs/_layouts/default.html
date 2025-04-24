@@ -1,225 +1,236 @@
 <!DOCTYPE html>
 <html lang="it">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.intro }}">
-  <meta name="keywords" content="{{ site.keywords }}">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.intro }}">
+    <meta name="keywords" content="{{ site.keywords }}">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ site.url }}" />
-<meta property="og:title" content="{{ site.title }}" />
-<meta property="og:description" content="{{ site.intro }}" />
-<meta property="og:image" content="{{ site.preview }}" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.intro }}" />
+    <meta property="og:image" content="{{ site.preview }}" />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="{{ site.intro }}" />
-<meta property="twitter:url" content="{{ site.url }}" />
-<meta property="twitter:title" content="{{ site.title }}" />
-<meta property="twitter:description" content="{{ site.intro }}" />
-<meta property="twitter:image" content="{{ site.preview }}" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="{{ site.intro }}" />
+    <meta property="twitter:url" content="{{ site.url }}" />
+    <meta property="twitter:title" content="{{ site.title }}" />
+    <meta property="twitter:description" content="{{ site.intro }}" />
+    <meta property="twitter:image" content="{{ site.preview }}" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Avilon
   * Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="index-page">
-	<!-- Cookie Policy -->
-	<div class="modal fade" id="cookie" tabindex="-1" role="dialog" aria-labelledby="titoloModale" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+  <body class="index-page">
+    <!-- Cookie Policy -->
+    <div class="modal fade" id="cookie" tabindex="-1" role="dialog" aria-labelledby="titoloModale" aria-hidden="true">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-              <h5 class="modal-title" id="titoloModale">Cookie Policy</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi">
-      </button>
+            <h5 class="modal-title" id="titoloModale">Cookie Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi">
+            </button>
           </div>
           <div class="modal-body">
-      <p class="text-left">
-            Questo sito non utilizza cookie.<br/>
-      Durante la navigazione su questo sito non viene installato alcun cookie sul tuo dispositivo.<br/>
-      Non viene raccolto, memorizzato o tracciato alcun tipo di informazione personale tramite cookie o altre tecnologie di tracciamento.<br/>
-      Grazie per la tua visita!
-      </p>
-    </div>
-    <!--
+            <p class="text-left">
+              Questo sito non utilizza cookie.<br />
+              Durante la navigazione su questo sito non viene installato alcun cookie sul tuo dispositivo.<br />
+              Non viene raccolto, memorizzato o tracciato alcun tipo di informazione personale tramite cookie o altre
+              tecnologie di tracciamento.<br />
+              Grazie per la tua visita!
+            </p>
+          </div>
+          <!--
           <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
           </div>
     -->
         </div>
+      </div>
     </div>
-</div>
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/lightvolley.svg" alt="">
-        <!-- <h1 class="sitename" style="color: #fccd00">{{ site.title }}</h1>-->
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li class="dropdown"><a href="#about"><span>Cosa è?</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#regole">Regole del gioco</a></li>
-              <li><a href="#attrezzatura">Attrezzatura</a></li>
-            </ul>
-          </li>
-          <li><a href="#dove">Dove</a></li>
-          <!--<li><a href="#portfolio">Benefici</a></li>-->
-          <li><a href="#team">Chi siamo</a></li>
-          <li><a href="#contact">Contatti</a></li>
-          <li><a href="#" data-bs-toggle="modal" data-bs-target="#cookie">Cookie Policy</a></li>
-
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Conosci il <span>Light Volley</span></h2>
-            <p class="animate__animated animate__fadeInUp">Un nuovo modo di giocare a pallavolo: semplice da imparare e super divertente per tutti!</p>
-            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Scopri di più</a>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Gioca a Light Volley</h2>
-            <p class="animate__animated animate__fadeInUp">Il Light Volleyball è giocato in spazi più piccoli rispetto alla pallavolo tradizionale e utilizza una palla più leggera e larga, il che rende il gioco più facile da intercettare, ma più difficile da controllare.</p>
-            <a href="#regole" class="btn-get-started animate__animated animate__fadeInUp scrollto">Scopri di più</a>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Divertiti con il Light Volley</h2>
-            <p class="animate__animated animate__fadeInUp">Organizziamo eventi per fare conoscere questo gioco</p>
-            <a href="#eventi" class="btn-get-started animate__animated animate__fadeInUp scrollto">Scopri di più</a>
-          </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/lightvolley.svg" alt="">
+          <!-- <h1 class="sitename" style="color: #fccd00">{{ site.title }}</h1>-->
         </a>
 
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li class="dropdown"><a href="#about"><span>Cosa è?</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#regole">Regole del gioco</a></li>
+                <li><a href="#attrezzatura">Attrezzatura</a></li>
+              </ul>
+            </li>
+            <li><a href="#dove">Dove</a></li>
+            <!--<li><a href="#portfolio">Benefici</a></li>-->
+            <li><a href="#team">Chi siamo</a></li>
+            <li><a href="#contact">Contatti</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#cookie">Cookie Policy</a></li>
+
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
 
       </div>
+    </header>
 
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-        <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-        </defs>
-        <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3"></use>
-        </g>
-        <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0"></use>
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9"></use>
-        </g>
-      </svg>
+    <main class="main">
 
-    </section><!-- /Hero Section -->
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+        <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade"
+          data-bs-ride="carousel">
 
-      <div class="container">
-
-        <div class="row">
-          <div class="col" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="inner-title">Cosa è il light volley?</h2>
-            <div class="our-story">
-              <h4>Semplificare la pallavolo per renderla più facile da giocare</h4>
-              <h3>La storia</h3>
-              <p class="text-justify">
-                {% if page.about %} {% capture about %}{% include_relative _texts/{{ page.about }}%}{% endcapture %} {{ about | markdownify }} {% endif %}
-              </p>
-              Cosa cambia?:
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>Un pallone più leggero e grande che diventa più facile da intercettare, ma più difficile da controllare.</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Cinque giocatori con un campo quasi la metà di quello da volley</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>L'obbligo di ruotare ad ogni punto fatto</span></li>
-              </ul>
-              <p>
-              ma il modo migliore per capirlo è provare!
-              </p>
-
-              <div class="watch-video d-flex align-items-center position-relative">
-                <i class="bi bi-play-circle"></i>
-                <a href="https://vimeo.com/995156119" class="glightbox stretched-link">Vedi video</a>
-              </div>
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-container">
+              <h2 class="animate__animated animate__fadeInDown">Conosci il <span>Light Volley</span></h2>
+              <p class="animate__animated animate__fadeInUp">Un nuovo modo di giocare a pallavolo: semplice da imparare
+                e super divertente per tutti!</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Scopri di più</a>
             </div>
           </div>
 
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <h2 class="animate__animated animate__fadeInDown">Gioca a Light Volley</h2>
+              <p class="animate__animated animate__fadeInUp">Il Light Volleyball è giocato in spazi più piccoli rispetto
+                alla pallavolo tradizionale e utilizza una palla più leggera e larga, il che rende il gioco più facile
+                da intercettare, ma più difficile da controllare.</p>
+              <a href="#regole" class="btn-get-started animate__animated animate__fadeInUp scrollto">Scopri di più</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <h2 class="animate__animated animate__fadeInDown">Divertiti con il Light Volley</h2>
+              <p class="animate__animated animate__fadeInUp">Organizziamo eventi per fare conoscere questo gioco</p>
+              <a href="#eventi" class="btn-get-started animate__animated animate__fadeInUp scrollto">Scopri di più</a>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+
+          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
+
         </div>
 
-      </div>
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28 " preserveAspectRatio="none">
+          <defs>
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+          </defs>
+          <g class="wave1">
+            <use xlink:href="#wave-path" x="50" y="3"></use>
+          </g>
+          <g class="wave2">
+            <use xlink:href="#wave-path" x="50" y="0"></use>
+          </g>
+          <g class="wave3">
+            <use xlink:href="#wave-path" x="50" y="9"></use>
+          </g>
+        </svg>
 
-    </section><!-- /About Section -->
+      </section><!-- /Hero Section -->
 
-    <!-- Clients Section 
+      <!-- About Section -->
+      <section id="about" class="about section">
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="inner-title">Cosa è il light volley?</h2>
+              <div class="our-story">
+                <h4>Semplificare la pallavolo per renderla più facile da giocare</h4>
+                <h3>La storia</h3>
+                <p class="text-justify">
+                  {% if page.about %} {% capture about %}{% include_relative _texts/{{ page.about }}%}{% endcapture %}
+                  {{ about | markdownify }} {% endif %}
+                </p>
+                Cosa cambia?:
+                <ul>
+                  <li><i class="bi bi-check-circle"></i> <span>Un pallone più leggero e grande che diventa più facile da
+                      intercettare, ma più difficile da controllare.</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>Cinque giocatori con un campo quasi la metà di quello da
+                      volley</span></li>
+                  <li><i class="bi bi-check-circle"></i> <span>L'obbligo di ruotare ad ogni punto fatto</span></li>
+                </ul>
+                <p>
+                  ma il modo migliore per capirlo è provare!
+                </p>
+
+                <div class="watch-video d-flex align-items-center position-relative">
+                  <i class="bi bi-play-circle"></i>
+                  <a href="https://vimeo.com/995156119" class="glightbox stretched-link">Vedi video</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section><!-- /About Section -->
+
+      <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
 
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
--->
-          <!--
           <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            <!--<img src="assets/img/clients/client-1.png" class="img-fluid" alt="">-->
+            In collaborazione con Osservatorio
           </div>
-
+<!--
           <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
           </div>
@@ -239,189 +250,212 @@
           <div class="col-xl-2 col-md-3 col-6 client-logo">
             <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
           </div>
+        -->
         </div>
       </div>
 
-    </section> /Clients Section -->
+    </section> <!-- /Clients Section -->
 
-    <!-- Features 2 Section -->
-    <section id="attrezzatura" class="features section features-2">
+      <!-- Features 2 Section -->
+      <section id="attrezzatura" class="features section features-2">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Campo da gioco e Pallone</h2>
-        <p>Il campo da gioco è più piccolo e recupera quello del badminton</p>
-      </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Come il Light Volley unisce le persone</h2>
+          <p>La formula con cui il light volley permette di unire fra di loro le persone è disegnata nei suoi</p>
+        </div><!-- End Section Title -->
 
-      <div class="container">
+        <div class="container">
 
-        <div class="row gy-4 justify-content-between">
-          <div class="features-image col-lg-4 d-flex align-items-center" data-aos="fade-up">
-            <img src="assets/img/campo_da_gioco_3d.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-7 d-flex flex-column justify-content-center">
+          <div class="row gy-4 justify-content-between">
+            <div class="features-image col-lg-4 d-flex align-items-center" data-aos="fade-up">
+              <img src="assets/img/campo_da_gioco_3d.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 d-flex flex-column justify-content-center">
 
-            <div class="features-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-window-desktop flex-shrink-0"></i>
+              <div class="features-item d-flex mt-5 " data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-1-square-fill flex-shrink-0"></i>
+                <div>
+
+                  <h4>Il pallone</h4>
+                  <p>avendo una dimensione di gran lunga superiore al pallone da pallavolo (diametro di 25cm) ed un peso
+                    molto inferiore (125gr), il risultato è che diventa più facile intercettare la palla
+                    ma più difficile controllarla permettendo così a chiunque di giocare anche se non ha appreso le
+                    tecniche di base
+                    della pallavolo permettendo allo stesso tempo una elevata quantità di tocchi e quindi divertimento
+                  </p>
+                  </p>
+                </div>
+              </div><!-- End Features Item-->
+
               <div>
-                <h4>Campo da gioco</h4>
-                <p>Lunghezza totale: 12m<br/>
-                Larghezza: 6m<br/>
-		Campo di ogni squadra: 6x6m<br/>
-		Linea per distinzione seconda linea a: 2m dalla rete</p>
-              </div>
-            </div><!-- End Features Item-->
+              </div><!-- End Features Item-->
 
-            <div class="features-item d-flex mt-5" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-border flex-shrink-0"></i>
-              <div>
-                <h4>Rete</h4>
-                <p>Divide il campo in due<br/>
-                Larghezza: 0.76m<br/>
-                Altezza per le donne: 1.9m<br/>
-                Altezza per gli uomini: 2.1m<br/>
-                Altezza misto: 2m</p>
-              </div>
-            </div><!-- End Features Item-->
+              <div class="features-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-3-square-fill flex-shrink-0"></i>
+                <div>
+                  <h4>La rete</h4>
+                  <p>L'altezza massima è di 2.1m (per gli uomini), e quella minima di 1.9m (per le donne)<br />
+                    Nel misto si usare un'altezza di 2m<br />
+                    Un altezza adeguata per permettere a qualsiasi persona di qualsiasi statura di attaccare
+                    <br/>
+                  </p>
+                </div>
+              </div><!-- End Features Item-->
 
-            <div class="features-item d-flex mt-5" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-brilliance flex-shrink-0"></i>
-              <div>
-                <h4>Pallone</h4>
-                <p>Diametro: 25cm<br/>
-                   Peso:125gr
-                </p>
-              </div>
-            </div><!-- End Features Item-->
 
-            <div class="features-item d-flex mt-5 " data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-people flex-shrink-0"></i>
-              <div>
-                <h4>Giocatori</h4>
-                <p>Le squadre sono composte da 5 giocatori ed è prevista anche la formula delle squadre miste con minimo due donne<br/>
-                Nota importante: ad ogni punto conquistato la squadra effettua una rotazione della formazione in senso orario ( = nessuno effettua due servizi consecutivi)</p>
-              </div>
-            </div><!-- End Features Item-->
 
-          </div>
-        </div>
+              <div class="features-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-3-square-fill flex-shrink-0"></i>
+                <div>
+                  <h4>Il campo da gioco</h4>
+                  <p>Si presenta più piccolo di quello del campo da volley (ogni squadra ha un campo 6x6) che ospita 5
+                    persone.<br />
+                    Dimensioni che appaiono piccole ma che, invece, allo stesso tempo creano aggregazione,
+                    collaborazione, rispetto degli spazi e rendono più difficile fare punti.<br />
+                    A 2 metri dalla rete è presente una linea di attacco che divide il campo in due zone: la zona di
+                    attacco e la zona di difesa.<br />
+                    Contrariamente a quello che si può pensare la zona da dove è permesso l'attacco è quella più
+                    distante dalla rete.<br />
+                    La conseguenza di questa scelta è che l'attacco diventa meno potente e allo stesso tempo riduce la
+                    possibilità di infortunio nel pestare i piedi dell'avversario</p>
+                </div>
+              </div><!-- End Features Item-->
 
-      </div>
+              <div class="features-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-3-square-fill flex-shrink-0"></i>
+                <div>
+                  <h4>Numero di atleti</h4>
+                  <p>In campo giocano 5 persone ma, nel caso di un numero maggiore, ad ogni conquista di punto può
+                    entrare una persona esterna a rotazione.<br />
+                    È prevista e fortemente consigliata la formula delle squadre miste (deve essere garantita la
+                    presenza di almeno due donne)<br />
+                    E sempre per favorire il gioco e permettere a tutti di giocare ad ogni punto conquistato la squadra
+                    effettua una rotazione della formazione in senso orario ( = nessuno effettua due servizi
+                    consecutivi)<br />
+                    Si giocano due set al 21, più l'eventuale set di spareggio al 15.</p>
+                </div>
+              </div><!-- End Features Item-->
 
-    </section><!-- /Features 2 Section -->
-
-    <!-- Services Section -->
-    <section id="dove" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Dove</h2>
-        <p>Qui è dove trovi tutte le iniziative </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar-event"></i>
-              </div>
-              <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
-                <h3>BIG TVOGETHER - 28/29 Giugno 2025</h3>
-              </a>
-              <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
-            </div>
-          </div><!-- End Service Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar-event"></i>
-              </div>
-              <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
-                <h3>BIG TVOGETHER - 05/06 Luglio 2025</h3>
-              </a>
-              <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
-            </div>
-          </div><!-- End Service Item -->
-          
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar-event"></i>
-              </div>
-              <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
-                <h3>BIG TVOGETHER - 12/13 Luglio 2025</h3>
-              </a>
-              <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
-            </div>
-          </div><!-- End Service Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar-event"></i>
-              </div>
-              <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
-                <h3>BIG TVOGETHER - 19/20 Luglio 2025</h3>
-              </a>
-              <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar-event"></i>
-              </div>
-              <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
-                <h3>BIG TVOGETHER - 26/27 Luglio 2025</h3>
-              </a>
-              <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar-event"></i>
-              </div>
-              <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
-                <h3>BIG TVOGETHER - 02 Agosto 2025</h3>
-              </a>
-              <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Cosa aspetti?</h3>
-              <p>Partecipa! Scarica questo volantino per maggiori informazioni</p>
-              <a class="cta-btn" href="docs/Volantino BIG TVOGETHER (21x21).pdf">Download</a>
             </div>
           </div>
+
         </div>
-      </div>
 
-    </section><!-- /Call To Action Section -->
+      </section><!-- /Features 2 Section -->
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
+      <!-- Services Section -->
+      <section id="dove" class="services section">
 
-      <!-- Section Title 
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Dove</h2>
+          <p>Qui è dove trovi tutte le iniziative </p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar-event"></i>
+                </div>
+                <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
+                  <h3>BIG TVOGETHER - 28/29 Giugno 2025</h3>
+                </a>
+                <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
+              </div>
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar-event"></i>
+                </div>
+                <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
+                  <h3>BIG TVOGETHER - 05/06 Luglio 2025</h3>
+                </a>
+                <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar-event"></i>
+                </div>
+                <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
+                  <h3>BIG TVOGETHER - 12/13 Luglio 2025</h3>
+                </a>
+                <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
+              </div>
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar-event"></i>
+                </div>
+                <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
+                  <h3>BIG TVOGETHER - 19/20 Luglio 2025</h3>
+                </a>
+                <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar-event"></i>
+                </div>
+                <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
+                  <h3>BIG TVOGETHER - 26/27 Luglio 2025</h3>
+                </a>
+                <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar-event"></i>
+                </div>
+                <a href="docs/Volantino BIG TVOGETHER (21x21).pdf" class="stretched-link">
+                  <h3>BIG TVOGETHER - 02 Agosto 2025</h3>
+                </a>
+                <p>Torneo di Light Volley al villaggio della pallavolo a Vason - Monte Bondone, Trento</p>
+              </div>
+            </div><!-- End Service Item -->
+
+          </div>
+
+        </div>
+
+      </section><!-- /Services Section -->
+
+      <!-- Call To Action Section -->
+      <section id="call-to-action" class="call-to-action section dark-background">
+
+        <img src="assets/img/cta-bg.jpg" alt="">
+
+        <div class="container">
+          <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-10">
+              <div class="text-center">
+                <h3>Cosa aspetti?</h3>
+                <p>Partecipa! Scarica questo volantino per maggiori informazioni</p>
+                <a class="cta-btn" href="docs/Volantino BIG TVOGETHER (21x21).pdf">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section><!-- /Call To Action Section -->
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing section">
+
+        <!-- Section Title 
       <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -487,91 +521,94 @@
       </div>
     </section>/Pricing Section -->
 
-    <!-- Faq Section -->
-    <section id="regole" class="faq section">
+        <!-- Faq Section -->
+        <section id="regole" class="faq section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Regole</h2>
-        <p>Light Volley si contraddistingue dalla pallavolo per le dimensioni del pallone, quelle del campo, il numero di giocatori in campo (5) e la rotazione della squadra per ogni punto.<br/>Tutto il resto fa riferimento alla pallavolo tranne in alcuni casi qui elencati.</p>
-      </div><!-- End Section Title -->
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Regole</h2>
+            <p>Light Volley si contraddistingue dalla pallavolo per le dimensioni del pallone, quelle del campo, il
+              numero di giocatori in campo (5) e la rotazione della squadra per ogni punto.<br />Tutto il resto fa
+              riferimento alla pallavolo tranne in alcuni casi qui elencati.</p>
+          </div><!-- End Section Title -->
 
-      <div class="container">
+          <div class="container">
 
-        <div class="row justify-content-center">
+            <div class="row justify-content-center">
 
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-            <div class="faq-container">
-              <div class="faq-item faq-active">
-                <h3>scopo del gioco</h3>
-                <div class="faq-content">
-                  <p>come nella pallavolo tradizionale lo scopo del gioco è fare cadere la palla nel campo avversario avendo a disposizione tre tocchi per squadra</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-              {% for rule in site.data.rules %}
-              <div class="faq-item">
-                <h3>{{ rule.title }}</h3>
-                <div class="faq-content">
-                  <p>{{ rule.desc }}</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-            {% endfor %}
-          </div><!-- End Faq Column-->
-        </div>
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Chi siamo</h2>
-        <p>Queste le persone che hanno portato il Light Volleyball in Italia</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-          {% for member in site.data.team %}
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/{{ member.img }}" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>{{ member.name }}</h4>
-                <span>{{ member.role }}</span>
-                <p>
-                  {{ member.desc }}
-                </p>
-                <div class="social">
-                  {% if member.linkedin %}
-                  <a href="https://www.linkedin.com/in/{{ member.linkedin}}"><i class="bi bi-linkedin"></i></a>
-                  {% endif %}
-                  {% if member.facebook %}
-                  <a href="https://www.facebook.com/{{ member.facebook}}"><i class="bi bi-facebook"></i></a>
-                  {% endif %}
-                  {% if member.instagram %}
-                  <a href="https://www.instagram.com/{{ member.instagram}}"><i class="bi bi-instagram"></i></a>
-                  {% endif %}
-                </div>
+              <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-container">
+                  <div class="faq-item faq-active">
+                    <h3>scopo del gioco</h3>
+                    <div class="faq-content">
+                      <p>come nella pallavolo tradizionale lo scopo del gioco è fare cadere la palla nel campo
+                        avversario avendo a disposizione tre tocchi per squadra</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+                  {% for rule in site.data.rules %}
+                  <div class="faq-item">
+                    <h3>{{ rule.title }}</h3>
+                    <div class="faq-content">
+                      <p>{{ rule.desc }}</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+                  {% endfor %}
+                </div><!-- End Faq Column-->
               </div>
             </div>
-          </div><!-- End Team Member -->
-          {% endfor %}
 
-        </div>
+        </section><!-- /Faq Section -->
 
-      </div>
+        <!-- Team Section -->
+        <section id="team" class="team section">
 
-    </section><!-- /Team Section -->
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Chi siamo</h2>
+            <p>Queste le persone che hanno portato il Light Volleyball in Italia</p>
+          </div><!-- End Section Title -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
+          <div class="container">
 
-      <!-- Section Title 
+            <div class="row">
+              {% for member in site.data.team %}
+              <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                  <img src="assets/img/team/{{ member.img }}" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4>{{ member.name }}</h4>
+                    <span>{{ member.role }}</span>
+                    <p>
+                      {{ member.desc }}
+                    </p>
+                    <div class="social">
+                      {% if member.linkedin %}
+                      <a href="https://www.linkedin.com/in/{{ member.linkedin}}"><i class="bi bi-linkedin"></i></a>
+                      {% endif %}
+                      {% if member.facebook %}
+                      <a href="https://www.facebook.com/{{ member.facebook}}"><i class="bi bi-facebook"></i></a>
+                      {% endif %}
+                      {% if member.instagram %}
+                      <a href="https://www.instagram.com/{{ member.instagram}}"><i class="bi bi-instagram"></i></a>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Team Member -->
+              {% endfor %}
+
+            </div>
+
+          </div>
+
+        </section><!-- /Team Section -->
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery section">
+
+          <!-- Section Title 
       <div class="container section-title" data-aos="fade-up">
         <h2>Gallery</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
@@ -649,77 +686,79 @@
 
     </section>/Gallery Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+          <!-- Contact Section -->
+          <section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contatti</h2>
-        <p>Non esitare a metterti in contatto con noi</p>
-      </div><!-- End Section Title -->
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+              <h2>Contatti</h2>
+              <p>Non esitare a metterti in contatto con noi</p>
+            </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade" data-aos-delay="100">
-        <div class="row"> <!-- gy-4"> -->
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Telefono</h3>
-                <p>+39 328 163 0784</p>
+            <div class="container" data-aos="fade" data-aos-delay="100">
+              <div class="row"> <!-- gy-4"> -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Telefono</h3>
+                    <p>+39 328 163 0784</p>
+                  </div>
+                </div><!-- End Info Item -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>info@lightvolley.it</p>
+                  </div>
+                </div><!-- End Info Item -->
               </div>
-          </div><!-- End Info Item -->
-          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p>info@lightvolley.it</p>
-              </div>
-            </div><!-- End Info Item -->
-        </div>
-      </div>
+            </div>
 
-    </section><!-- /Contact Section -->
+          </section><!-- /Contact Section -->
 
-  </main>
+    </main>
 
-  <footer id="footer" class="footer light-background">
-    <div class="container">
-      <h3 class="sitename">{{ site.title}}</h3>
-      <p>{{ site.subtitle }}</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-youtube"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-      </div>
+    <footer id="footer" class="footer light-background">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Light Volley Italy</strong> <span>Creative Commons Attribution</span>
+        <h3 class="sitename">{{ site.title}}</h3>
+        <p>{{ site.subtitle }}</p>
+        <div class="social-links d-flex justify-content-center">
+          <a href=""><i class="bi bi-youtube"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span> <strong class="px-1 sitename">Light Volley Italy</strong> <span>Creative Commons
+              Attribution</span>
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-</body>
+  </body>
 
 </html>

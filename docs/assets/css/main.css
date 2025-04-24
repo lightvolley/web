@@ -862,6 +862,7 @@ section,
 --------------------------------------------------------------*/
 .clients {
   padding: 20px 0;
+  color: #fccd00;
 }
 
 .clients .client-logo {
@@ -875,8 +876,8 @@ section,
   padding: 20px 40px;
   max-width: 90%;
   transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
+  /*opacity: 0.8;*/
+ /* filter: brightness(0.9); grayscale(100);*/
 }
 
 .clients .client-logo img:hover {
