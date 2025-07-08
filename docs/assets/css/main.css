@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #212529;  /*065b5e;  Color for headings, subheadings and title throughout the website */
-  --accent-color: #fccd00; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #4db8ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #212529; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -34,7 +34,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #fccd00; /* #1dc8cd   Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #4db8ff; /* #1dc8cd   Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -67,13 +67,13 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--heading-color);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--heading-color), transparent 25%);
   text-decoration: none;
 }
 
@@ -375,7 +375,7 @@ h6 {
 }
 
 .footer h3 {
-  color: #fccd00;
+  color: #ffffff;
   font-size: 36px;
   font-weight: 700;
   position: relative;
@@ -399,7 +399,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-color);
+  background: #ffffff;
   color: var(--contrast-color);
   line-height: 1;
   margin: 0 4px;
@@ -411,18 +411,26 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: #4db8ff; /*color-mix(in srgb, var(--background-color), transparent 20%);*/
   text-decoration: none;
 }
 
 .footer .copyright {
   padding-top: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid #ffffff; /*color-mix(in srgb, var(--default-color), transparent 90%);*/
 }
 
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
+}
+
+.credits a {
+  color: #ffffff;
+}
+
+.credits a:hover {
+  color: #4db8ff;
 }
 
 /*--------------------------------------------------------------
@@ -591,7 +599,7 @@ section,
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--accent-color);
+  background:#232c55;
   left: 0;
   right: 0;
   bottom: 0;
@@ -812,13 +820,13 @@ section,
   font-size: 1.25rem;
   margin-right: 0.5rem;
   line-height: 1.2;
-  color: var(--accent-color);
+  color: #232c55; /*var(--header-color);*/
 }
 
 .about .watch-video i {
   font-size: 2rem;
   transition: 0.3s;
-  color: var(--accent-color);
+  color: #232c55; /* var(--accent-color);*/
 }
 
 .about .watch-video a {
@@ -862,7 +870,7 @@ section,
 --------------------------------------------------------------*/
 .clients {
   padding: 20px 0;
-  color: #fccd00;
+  color: #ffffff;
 }
 
 .clients .client-logo {
@@ -906,7 +914,7 @@ section,
 
 .features-2 .features-item i {
   font-size: 48px;
-  color: var(--accent-color);
+  color:#232c55;
   margin-right: 20px;
   line-height: 0;
 }
@@ -933,7 +941,7 @@ section,
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: var(--accent-color);
+  background: #ffffff; /*var(--accent-color);*/ 
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -943,7 +951,7 @@ section,
 }
 
 .services .service-item .icon i {
-  color: var(--contrast-color);
+  color: #232c55; /*/var(--contrast-color);*/
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -962,11 +970,11 @@ section,
 }
 
 .services .service-item:hover {
-  border-color: var(--accent-color);
+  border-color: #232c55; /*var(--accent-color);*/
 }
 
 .services .service-item:hover h3 {
-  color: var(--accent-color);
+  color:  #232c55; /*var(--accent-color);*/
 }
 
 /*--------------------------------------------------------------
@@ -1031,154 +1039,6 @@ section,
   border: 2px solid var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-.pricing {
-  padding: 60px 0 120px 0;
-}
-
-.pricing .section-title {
-  margin-bottom: 40px;
-}
-
-.pricing .pricing-item {
-  background-color: var(--surface-color);
-  box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
-  padding: 60px 40px;
-  height: 100%;
-  position: relative;
-  border-radius: 15px;
-}
-
-.pricing h3 {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.pricing .icon {
-  margin: 30px auto 20px auto;
-  width: 70px;
-  height: 70px;
-  background: var(--accent-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  transform-style: preserve-3d;
-}
-
-.pricing .icon i {
-  color: var(--background-color);
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
-  line-height: 0;
-}
-
-.pricing .icon::before {
-  position: absolute;
-  content: "";
-  height: 86px;
-  width: 86px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--accent-color), transparent 80%);
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-
-.pricing .icon::after {
-  position: absolute;
-  content: "";
-  height: 102px;
-  width: 102px;
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-2px);
-}
-
-.pricing h4 {
-  font-size: 48px;
-  color: var(--accent-color);
-  font-weight: 700;
-  font-family: var(--heading-font);
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.pricing ul {
-  padding: 20px 0;
-  list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.pricing ul i {
-  color: #059652;
-  font-size: 24px;
-  padding-right: 3px;
-}
-
-.pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .buy-btn {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
-  transition: none;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: var(--heading-font);
-  transition: 0.3s;
-}
-
-.pricing .buy-btn:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.pricing .featured {
-  z-index: 10;
-  border: 3px solid var(--accent-color);
-}
-
-@media (min-width: 992px) {
-  .pricing .featured {
-    transform: scale(1.15);
-  }
-}
 
 /*--------------------------------------------------------------
 # Faq Section
@@ -1209,12 +1069,12 @@ section,
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
+  color: #232c55;
   padding-right: 5px;
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: #4db8ff;
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -1241,16 +1101,16 @@ section,
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
+  color:  #232c55; /*var(--accent-color);*/
 }
 
 .faq .faq-container .faq-active {
   background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-color:  #232c55;
 }
 
 .faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
+  color:  #232c55;
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -1346,7 +1206,7 @@ section,
 }
 
 .contact .info-item i {
-  color: var(--accent-color);
+  color: #232c55;
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
   font-size: 20px;
   width: 44px;
